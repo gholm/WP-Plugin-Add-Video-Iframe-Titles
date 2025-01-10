@@ -19,19 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Handle Vimeo
+        // Handle Vimeo using the Vimeo Player API
         if (src.includes("player.vimeo.com/video/")) {
-            const videoId = src.split("/video/")[1]?.split("?")[0];
-            if (videoId) {
-                fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${videoId}`)
-                    .then((response) => response.json())
-                    .then((data) => {
-                        if (data.title) {
-                            iframe.setAttribute("title", data.title);
-                        }
-                    })
-                    .catch((error) => console.error("Error fetching Vimeo title:", error));
-            }
+            const player = new Vimeo.Player(iframe);
+
+            player.getVideoTitle().then(function(title) {
+                if (title) {
+                    iframe.setAttribute("title", title);
+                }
+            }).catch(function(error) {
+                console.error("Error fetching Vimeo title:", error);
+            });
         }
     });
 });

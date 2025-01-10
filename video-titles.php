@@ -3,7 +3,7 @@
  * Plugin Name: Add iframe titles for Vimeo & Youtube
  * Plugin URI: https://github.com/gholm/video-iframe-titles-wp
  * Description: Automatically adds titles to YouTube and Vimeo iframes.
- * Version: 1.6
+ * Version: 1.7
  * Author: Serge
  * Author URI: 
  * License: GPL2
