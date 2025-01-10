@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Video Title Enhancer
- * Plugin URI: https://example.com/video-title-enhancer
- * Description: Automatically adds titles to YouTube, Vimeo, and SlideShare iframes.
+ * Plugin Name: Add iframe titles for Vimeo & Youtube
+ * Plugin URI: https://github.com/gholm/video-iframe-titles-wp
+ * Description: Automatically adds titles to YouTube and Vimeo iframes.
  * Version: 1.6
  * Author: Serge
- * Author URI: https://example.com
+ * Author URI: 
  * License: GPL2
  */
 
